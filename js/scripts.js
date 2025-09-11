@@ -1,0 +1,1 @@
+$(window).on("load",function(){var e,t;window.WebFontConfig={custom:{families:["Inter:n3,n4,n5,n6,n7,n8"],urls:["/css/top.css"]}},(e=document.createElement("script")).src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",e.type="text/javascript",e.async="true",(t=document.getElementsByTagName("script")[0]).parentNode.insertBefore(e,t)});
