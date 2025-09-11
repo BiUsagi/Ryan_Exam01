@@ -1,0 +1,32 @@
+@use 'base/variables'as variables;
+
+@mixin button-common-contract($padding: 15px 68px 15px 32px) {
+    position: relative;
+    display: inline-block;
+    padding: $padding;
+    background-color: variables.$primary-color;
+    color: variables.$text-dark;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-size: 16px;
+    font-weight: variables.$font-weight-bold;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &::after {
+        position: absolute;
+        right: 32px;
+        content: "";
+        background-image: url("../img/common/icon/icon-common-button.png");
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+}
+
+

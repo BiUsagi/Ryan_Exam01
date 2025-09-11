@@ -1,0 +1,237 @@
+@use 'base/variables'as varl;
+@use 'base/base'as base;
+@use 'parts/components'as components;
+
+
+// Navigation bar
+.top-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 99;
+
+}
+
+.navigatio-top {
+    width: varl.$container-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+
+    @include varl.respond-sp {
+        width: calc(100vw - 60px);
+    }
+
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 118px;
+    min-height: 48px;
+    background-color: varl.$primary-color;
+    color: varl.$text-dark;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: varl.$font-weight-bold;
+
+    @include varl.respond-sp {
+        font-size: .14rem;
+    }
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include varl.respond-sp {
+        display: none;
+    }
+
+    .header-links {
+        display: flex;
+        gap: 24px;
+
+        .header-link-item {
+            color: #556070;
+            font-weight: varl.$font-weight-regular;
+            font-size: 16px;
+
+            &:hover {
+                color: #132238;
+                text-shadow: 0.5px 0 0 currentColor;
+            }
+        }
+        .active {
+            color: #132238;
+            font-weight: varl.$font-weight-semibold;
+        }
+
+    }
+}
+
+// Keyvisual section
+
+.section-top-keyvisual {
+    background: linear-gradient(to bottom, #ffffff 0%, #e9f0ec 100%);
+    min-height: 1192px;
+
+
+}
+
+.banner-top-keyvisual {
+    background-image: url("../img/top/keyvisual_background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: varl.$container-width;
+    min-height: 592px;
+    margin: 112px auto 104px;
+    padding: 112px 0 120px 112px;
+    border-radius: 16px;
+
+    @include varl.respond-sp {
+        background-size: auto 100%;
+        background-position: right;
+        width: calc(100vw - 60px);
+        padding: 112px 30px 120px 30px;
+    }
+}
+
+.title-top-keyvisual {
+    max-width: 673px;
+    color: varl.$text-white;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    line-height: 72px;
+
+    .title-icon-keyvisual {
+        display: inline;
+        margin-right: 14px;
+        width: 63px;
+        height: 59px;
+
+
+    }
+
+    @include varl.respond-sp {
+        font-size: .32rem;
+    }
+}
+
+.description-top-keyvisual {
+    max-width: 625px;
+    color: varl.$text-white;
+    font-size: 24px;
+    font-weight: varl.$font-weight-regular;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+
+.button-top-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.button-common-contract {
+    @include components.button-common-contract;
+}
+
+.button-top-keyvisual {
+    position: relative;
+    color: varl.$text-white;
+    min-width: 164px;
+    padding: 16px 0 16px 91px;
+    font-size: 16px;
+    font-weight: varl.$font-weight-semibold;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 1px;
+        left: 0;
+        background-color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 55px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("../img/top/icon/header-icon-play.png");
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.clients-top-keyvisual {
+    width: varl.$container-width;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+
+}
+
+.heading-top-clients {
+    flex: 1;
+    margin: auto 0;
+
+    .title-clients {
+        color: varl.$text-dark;
+        font-size: 32px;
+        font-weight: varl.$font-weight-bold;
+        width: 50rem;
+        margin-bottom: 24px;
+    }
+
+    .description-clients {
+        color: varl.$gray-500;
+        font-size: 16px;
+        font-weight: varl.$font-weight-regular;
+        width: 43rem;
+    }
+}
+
+.list-clients {
+    flex: 1;
+    display: flex;
+    gap: 24px;
+    min-height: 288px;
+
+
+    .logo-clients {
+        padding: 24px 0;
+        background-color: #fff;
+        border-radius: 12px;
+
+        &:first-child {
+            margin-bottom: 24px;
+        }
+
+
+    }
+
+    .item-clients {
+
+        .active {
+            box-shadow: 0 16px 48px rgba(19, 34, 56, 0.12);
+        }
+
+        &:nth-child(2) {
+            padding-top: 40px;
+        }
+    }
+}
