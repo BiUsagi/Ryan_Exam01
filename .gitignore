@@ -79,7 +79,7 @@ typings/
 .tern-port
 
 # Build directories
-dist/
+# dist/ - Keep dist for GitHub Pages deployment
 build/
 
 # IDE files
