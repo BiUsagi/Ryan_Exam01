@@ -16,7 +16,18 @@ html {
 @media (max-width: 768px) {
     html {
         font-size: calc(100vw / 3.75);
+        overflow-x: hidden;
     }
+
+    body {
+        font-size: .16rem !important;
+        line-height: normal !important;
+    }
+
+    p {
+        margin-bottom: .3rem !important;
+    }
+
 }
 
 body {

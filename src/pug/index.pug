@@ -6,6 +6,10 @@ html(lang="en")
         title Top Page
         link(rel="stylesheet" href="css/top.css")
         link(rel="stylesheet" href="https://fonts.cdnfonts.com/css/inter" )
+
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css")
+
+
     body
         header
             .top-header 
@@ -32,12 +36,18 @@ html(lang="en")
                         a.nav-button.trans(href="#") CONTRACT
 
         main
+            //- Darkmode button
+            button.darkmode-common
+                img(src="./img/common/icon/button_common_darkmode.png" alt="Darkmode Button" width="24" height="24" loading="eager")
+
+
+
             //- Keyvisual
             section.section-top-keyvisual
                 .banner-top-keyvisual 
                     h1.title-top-keyvisual 
                         span
-                            img.title-icon-keyvisual(src="./img/top/icon/header-icon-hand.png" alt="Hey, I’m Jamel Full-Stack Developer" loading="eager" width="64" height="59") 
+                            img.title-icon-keyvisual(src="./img/top/icon/header_icon_hand.png" alt="Hey, I’m Jamel Full-Stack Developer" loading="eager" width="64" height="59") 
                         | Hey, I’m Jamel Full-Stack Developer.
                     p.description-top-keyvisual Full Stack Frontend Developer and Content Writing Based on LA. I specialize in Bug Fixing, Responsive Web Design, and Visual Development.
                     ul.button-top-list
@@ -52,19 +62,241 @@ html(lang="en")
                     ul.list-clients 
                         li.item-clients
                             figure.logo-clients
-                                img(src="./img/top/icon/keyvisual-icon-amazon.png" alt="amazon" width="200" height="64" loading="lazy")
+                                img(src="./img/top/icon/keyvisual_icon_amazon.png" alt="amazon" width="200" height="64" loading="lazy")
                             figure.logo-clients
-                                img(src="./img/top/icon/keyvisual-icon-dribbble.png" alt="dribbble" width="200" height="64" loading="lazy")
+                                img(src="./img/top/icon/keyvisual_icon_dribbble.png" alt="dribbble" width="200" height="64" loading="lazy")
                         li.item-clients
                             figure.logo-clients.active
-                                img(src="./img/top/icon/keyvisual-icon-google.png" alt="google" width="200" height="64" loading="lazy")
+                                img(src="./img/top/icon/keyvisual_icon_google.png" alt="google" width="200" height="64" loading="lazy")
                             figure.logo-clients
-                                img(src="./img/top/icon/keyvisual-icon-microsoft.png" alt="microsoft" width="200" height="64" loading="lazy")
+                                img(src="./img/top/icon/keyvisual_icon_microsoft.png" alt="microsoft" width="200" height="64" loading="lazy")
                         li.item-clients
                             figure.logo-clients
-                                img(src="./img/top/icon/keyvisual-icon-spotify.png" alt="spotify" width="200" height="64" loading="lazy")
+                                img(src="./img/top/icon/keyvisual_icon_spotify.png" alt="spotify" width="200" height="64" loading="lazy")
                             figure.logo-clients
-                                img(src="./img/top/icon/keyvisual-icon-linkedin.png" alt="linkedin" width="200" height="64" loading="lazy")
+                                img(src="./img/top/icon/keyvisual_icon_linkedin.png" alt="linkedin" width="200" height="64" loading="lazy")
+
+            //- Case Study
+            section.section-top-casestudy
+                .casestudy-heading 
+                    .block-common-casestudy 
+                        h2 Latest Case Study
+                        p Morbi risus elit, fringilla in cursus a, molestie non dui. 
+                            br 
+                            | Nunc accumsan gravida risus, ac semper libero mollis ut.
+                    .button-common-secondary
+                        button.slide-button-prev
+                            img(src="./img/common/icon/icon_common_left.png" alt="Button Left" width="24" height="24" loading="lazy")
+                        button.slide-button-next
+                            img(src="./img/common/icon/icon_common_right.png" alt="Button Right" width="24" height="24" loading="lazy")
+                .casestudy-content.swiper
+                    ul.casestudy-content-list.swiper-wrapper
+                        li.swiper-slide
+                            figure
+                                img(src="./img/top/casestudy_image_01.png" alt="Latest Case Study" width="424" height="536" loading="eager")
+                                figcaption.casestudy-slide-content
+                                    ul.casestudy-content-tag 
+                                        li Java
+                                        li HTML 
+                                        li CSS
+                                    h3.casestudy-item-title Relik - Admin Dashboard
+                                    a.casestudy-item-action(href="#") View Case Study
+                        li.swiper-slide
+                            figure
+                                img(src="./img/top/casestudy_image_02.png" alt="Relik - Admin Dashboard" width="424" height="536" loading="eager")
+                                figcaption.casestudy-slide-content
+                                    ul.casestudy-content-tag 
+                                        li Java
+                                        li HTML 
+                                        li CSS
+                                    h3.casestudy-item-title Relik - Admin Dashboard
+                                    a.casestudy-item-action(href="#") View Case Study
+
+                        li.swiper-slide
+                            figure
+                                img(src="./img/top/casestudy_image_03.png" alt="Latest Case Study" width="424" height="536" loading="eager")
+                                figcaption.casestudy-slide-content
+                                    ul.casestudy-content-tag 
+                                        li Java
+                                        li HTML 
+                                        li CSS
+                                    h3.casestudy-item-title Relik - Admin Dashboard
+                                    a.casestudy-item-action(href="#") View Case Study
+                        li.swiper-slide
+                            figure
+                                img(src="./img/top/casestudy_image_02.png" alt="Relik - Admin Dashboard" width="424" height="536" loading="eager")
+                                figcaption.casestudy-slide-content
+                                    ul.casestudy-content-tag 
+                                        li Java
+                                        li HTML 
+                                        li CSS
+                                    h3.casestudy-item-title Relik - Admin Dashboard
+                                    a.casestudy-item-action(href="#") View Case Study
+                        li.swiper-slide
+                            figure
+                                img(src="./img/top/casestudy_image_03.png" alt="Latest Case Study" width="424" height="536" loading="eager")
+                                figcaption.casestudy-slide-content
+                                    ul.casestudy-content-tag 
+                                        li Java
+                                        li HTML 
+                                        li CSS
+                                    h3.casestudy-item-title Relik - Admin Dashboard
+                                    a.casestudy-item-action(href="#") View Case Study
+                div.casestudy-slide-pagination.swiper-pagination
+
+            //- Services
+            section.section-top-services
+                .services-heading 
+                    .block-common-seervices 
+                        h2 My Services
+                        p Morbi risus elit, fringilla in cursus a, molestie non dui. 
+                            br 
+                            | Nunc accumsan gravida risus, ac semper libero mollis ut.
+                ul.list-top-services
+                    li
+                        a(href="#")
+                            figure.services-image 
+                                img(src="./img/top/section_image_services_01.png" alt="Back-end Development" width="344" height="248" loading="lazy")
+                        a(href="#")
+                            h3.title-list-services  Back-end Development 
+                        p Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.
+                        a(href="#").button-list-service Let’s Work Together
+                    li
+                        a(href="#")
+                            figure.services-image 
+                                img(src="./img/top/section_image_services_02.png" alt="Front-end Development" width="344" height="248" loading="lazy")
+                        a(href="#")
+                            h3.title-list-services  Back-end Development 
+                        p Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.
+                        a(href="#").button-list-service Let’s Work Together
+                    li
+                        a(href="#")
+                            figure.services-image 
+                                img(src="./img/top/section_image_services_03.png" alt="Content Writing" width="344" height="248" loading="lazy")
+                        a(href="#")
+                            h3.title-list-services  Back-end Development 
+                        p Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.
+                        a(href="#").button-list-service Let’s Work Together
+
+
+            //- Stats
+            div.section-top-stats
+                ul.list-top-stats 
+                    li
+                        figure.icon-list-stats
+                            img(src="./img/top/icon/stats_icon_01.png" alt="23+" width="48" height="48" loading="lazy")
+                        h2.title-list-stats 23+
+                        p Years of experience
+                    li
+                        figure.icon-list-stats
+                            img(src="./img/top/icon/stats_icon_02.png" alt="325+" width="48" height="48" loading="lazy")
+                        h2.title-list-stats 325+
+                        p Completed Projects
+                    li
+                        figure.icon-list-stats
+                            img(src="./img/top/icon/stats_icon_03.png" alt="279+" width="48" height="48" loading="lazy")
+                        h2.title-list-stats 279+
+                        p Years of experience
+                    li
+                        figure.icon-list-stats
+                            img(src="./img/top/icon/stats_icon_04.png" alt="1652+" width="48" height="48" loading="lazy")
+                        h2.title-list-stats 1652+
+                        p Hours of Work
+            //- Testimonial
+            section.section-top-testimonial
+                .testimonial-content 
+                    .block-common-testimonial 
+                        h2 Client Testimonial
+                        p Praesent interdum eu magna a imperdiet. Ut orci ipsum, rutrum id tortor sit amet, mattis cursus libero. Phasellus facilisis malesuada nibh vel commodo.
+                    .testimonial-slider.swiper
+                        ul.testimonial-list.swiper-wrapper
+                            li.testimnial-item.swiper-slide
+                                blockquote.testimonial-feedback “Great Designer, does great work and is very flexible with change. if you’re a programmer and are looking for UI/UX designer is definitely well qualified for the job.”
+                                .testimonial-client
+                                    .client-profile
+                                        figure.client-avatar
+                                            img(src="./img/top/testional_image_user.png" alt="Cameron Williamson" width="72" height="72" loading="lazy")
+                                        .testimonial-client-info
+                                            h3.testimonial-client-name Cameron Williamson
+                                            p Founder of 
+                                                span Relik
+                            li.testimnial-item.swiper-slide
+                                blockquote.testimonial-feedback “Great Designer, does great work and is very flexible with change. if you’re a programmer and are looking for UI/UX designer is definitely well qualified for the job.”
+                                .testimonial-client
+                                    .client-profile
+                                        figure.client-avatar
+                                            img(src="./img/top/testional_image_user.png" alt="Cameron Williamson" width="72" height="72" loading="lazy")
+                                        .testimonial-client-info
+                                            h3.testimonial-client-name Cameron Williamson
+                                            p Founder of 
+                                                span Relik
+                            li.testimnial-item.swiper-slide 
+                                blockquote.testimonial-feedback “Great Designer, does great work and is very flexible with change. if you’re a programmer and are looking for UI/UX designer is definitely well qualified for the job.”
+                                .testimonial-client
+                                    .client-profile
+                                        figure.client-avatar
+                                            img(src="./img/top/testional_image_user.png" alt="Cameron Williamson" width="72" height="72" loading="lazy")
+                                        .testimonial-client-info
+                                            h3.testimonial-client-name Cameron Williamson
+                                            p Founder of 
+                                                span Relik
+                    .button-common-secondary
+                        button.testimnial-button-prev
+                            img(src="./img/common/icon/icon_common_left.png" alt="Button Left" width="24" height="24" loading="lazy")
+                        button.testimnial-button-next
+                            img(src="./img/common/icon/icon_common_right.png" alt="Button Right" width="24" height="24" loading="lazy")
+                figure.testimonial-video
+                    img(src="./img/top/testimonial_video.png" alt="Client Testimonial" width="536" height="648" loading="lazy")
+
+            //- Contact
+            section.section-top-contact
+                .contact-content 
+                    .block-common-contact
+                        h2 Have a project idea. Let’s work together!
+                        p Do you fancy saying hi to me or do you want to get started with your project and you need my help? Feel free to contact me.
+                    a.button-common-contract(href="#") LET'S WORK TOGETHER
+                ul.contact-list
+                    li
+                        figure
+                            img(src="./img/top/icon/contact_icon_01.png" alt="Chat with me" width="40" height="40" loading="lazy")
+                        .list-title 
+                            h3.title-info CHAT WITH ME
+                            a.trans(href="mailto:kevin.gilbert.com") kevin.gilbert.com
+                    li
+                        figure
+                            img(src="./img/top/icon/contact_icon_02.png" alt="Call Me" width="40" height="40" loading="lazy")
+                        .list-title 
+                            h3.title-info  CALL ME
+                            a.trans(href="tel:+12025550190") +1-202-555-0190
+
+        footer.footer-common
+            .footer-infomation 
+                a.footer-logo
+                    img(src="./img/common/header_logo.png" alt="Jamel Eusebio" width="230" height="48" loading="eager")
+                address.footer-address
+                    span 4517 Ave. Manchester, Kentucky 39495, 
+                    span Los Angeles, California, USA
+            ul.footer-list 
+                li
+                    a(href="#") Home
+                    a(href="#") About
+                    a(href="#") Resume
+                    a(href="#") Article
+                li
+                    a(href="#") Services
+                    a(href="#") Projects
+                    a(href="#") Pricing Plans
+                    a(href="#") Contact
+                li
+                    a(href="#") Facebook
+                    a(href="#") Twitter
+                    a(href="#") Instagram
+                    a(href="#") CodePen
+
+            small.footer-copyright All content © 2006-Current Jamel Eusebio and respective copyright holders.
+
+        script(src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js")
+        script(src="./js/scripts.js")
 
 
 

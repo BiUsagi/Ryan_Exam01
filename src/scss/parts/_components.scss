@@ -1,6 +1,6 @@
 @use 'base/variables'as variables;
 
-@mixin button-common-contract($padding: 15px 68px 15px 32px) {
+@mixin button-common-primary($padding: 15px 68px 15px 32px) {
     position: relative;
     display: inline-block;
     padding: $padding;
@@ -20,7 +20,7 @@
         position: absolute;
         right: 32px;
         content: "";
-        background-image: url("../img/common/icon/icon-common-button.png");
+        background-image: url("../img/common/icon/icon_common_button.png");
         background-size: 24px 24px;
         width: 24px;
         height: 24px;
@@ -29,4 +29,82 @@
     }
 }
 
+@mixin button-common-secondary($padding: 15px 68px 15px 32px) {
 
+    button {
+        background: #fff;
+        width: 56px;
+        height: 56px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid variables.$primary-color;
+        color: variables.$text-dark;
+        cursor: pointer;
+        transition: all .25s ease;
+
+        &:first-child {
+            margin-right: 16px;
+        }
+
+
+        img {
+            margin: auto;
+        }
+
+        &:hover {
+            background-color: variables.$primary-color;
+        }
+    }
+}
+
+
+@mixin button-common-darkmode() {
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    width: 48px;
+    height: 48px;
+    background-color: #1777E5;
+    border-radius: 50%;
+    border: none;
+
+
+    cursor: pointer;
+    transition: all .25s ease;
+
+    img {
+        margin: auto;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+@mixin block-common($title-color: variables.$text-dark, $p-color: #3E5985) {
+
+    h2 {
+        color: $title-color;
+        font-weight: variables.$font-weight-bold;
+        font-size: 48px;
+        margin-bottom: 24px;
+
+        @include variables.respond-sp {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+    }
+
+    p {
+        color: $p-color;
+        font-weight: variables.$font-weight-regular;
+        font-size: 20px;
+        line-height: 28px;
+
+        @include variables.respond-sp {
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
