@@ -21,13 +21,13 @@
 }
 
 .navigation-top {
-    width: varl.$container-width;
+    width: calc(100% - 60px) !important;
+    max-width: varl.$container-width;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 32px 0;
-
-
+    flex-wrap: wrap;
 }
 
 .nav-button {
@@ -44,6 +44,10 @@
     font-weight: varl.$font-weight-bold;
 
 
+}
+
+.header-logo {
+    margin: auto 0;
 }
 
 // Hamburger menu
@@ -221,8 +225,6 @@
     display: flex;
     align-items: center;
     gap: 24px;
-
-
 
     .header-links {
         display: flex;
