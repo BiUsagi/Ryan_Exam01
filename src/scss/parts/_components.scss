@@ -6,11 +6,16 @@
     padding: $padding;
     background-color: variables.$primary-color;
     color: variables.$text-dark;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all .25s ease;
     font-size: 16px;
     font-weight: variables.$font-weight-bold;
+
+    @include variables.respond-sp {
+        font-size: .16rem;
+        padding: .15rem .68rem .15rem .32rem;
+    }
 
     &:hover {
         opacity: .8;
@@ -26,6 +31,12 @@
         height: 24px;
         background-position-y: center;
         background-repeat: no-repeat;
+
+        @include variables.respond-sp {
+            background-size: .24rem .24rem;
+            width: .24rem;
+            height: .24rem;
+        }
     }
 }
 
@@ -42,13 +53,24 @@
         cursor: pointer;
         transition: all .25s ease;
 
+        @include variables.respond-sp {
+            width: .48rem;
+            height: .48rem;
+        }
+
+
         &:first-child {
-            margin-right: 16px;
+            margin-right: 10px;
         }
 
 
         img {
             margin: auto;
+
+            @include variables.respond-sp {
+                width: .24rem;
+                height: .24rem;
+            }
         }
 
         &:hover {
@@ -67,6 +89,12 @@
     background-color: #1777E5;
     border-radius: 50%;
     border: none;
+    z-index: 999;
+
+    @include variables.respond-sp {
+        width: .48rem;
+        height: .48rem;
+    }
 
 
     cursor: pointer;
@@ -74,6 +102,11 @@
 
     img {
         margin: auto;
+
+        @include variables.respond-sp {
+            width: .24rem;
+            height: .24rem;
+        }
     }
 
     &:hover {
@@ -91,8 +124,9 @@
 
         @include variables.respond-sp {
             text-align: center;
-            font-size: 40px;
-            margin-bottom: 16px;
+            font-size: .4rem;
+            margin-bottom: .16rem;
+            // line-height: .5rem;
         }
     }
 
@@ -104,7 +138,9 @@
 
         @include variables.respond-sp {
             text-align: center;
-            font-size: 16px;
+            line-height: .24rem;
+            font-size: .16rem;
+            margin-bottom: .3rem;
         }
     }
 }

@@ -37,6 +37,10 @@ const swiper = new Swiper(".casestudy-content", {
       slidesPerView: 1,
       spaceBetween: 20,
     },
+    // 600:{
+    //   slidesPerView: 2,
+    //   spaceBetween: 20,
+    // },
     1024: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -54,4 +58,35 @@ const swiperTestimonial = new Swiper(".testimonial-slider", {
     nextEl: ".testimnial-button-next",
     prevEl: ".testimnial-button-prev",
   },
+});
+
+const hamMenu = document.querySelector(".hamburger-menu");
+const offScreenMenu = document.querySelector(".navigation-mobilemenu");
+const menuLinks = document.querySelectorAll(".mobilemenu-list a");
+const closeMenuBtn = document.querySelector(".mobilemenu-close");
+
+function closeMenu() {
+  offScreenMenu.classList.remove("navigation-mobilemenu-active");
+  document.body.style.overflow = "auto";
+}
+
+function openMenu() {
+  offScreenMenu.classList.add("navigation-mobilemenu-active");
+  document.body.style.overflow = "hidden";
+}
+
+hamMenu.addEventListener("click", () => {
+  if (offScreenMenu.classList.contains("navigation-mobilemenu-active")) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
+
+// Close menu X
+closeMenuBtn.addEventListener("click", closeMenu);
+
+// Close menu links
+menuLinks.forEach((link) => {
+  link.addEventListener("click", closeMenu);
 });

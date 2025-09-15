@@ -13,9 +13,9 @@ html(lang="en")
     body
         header
             .top-header 
-                .navigatio-top
+                .navigation-top
                     //- Navigation
-                    a.header-logo
+                    a.header-logo(href="./")
                         img(src="./img/common/header_logo.png" alt="Jamel Eusebio" width="230" height="48" loading="eager")
                     nav.header-nav
                         ul.header-links
@@ -35,6 +35,35 @@ html(lang="en")
                                 a.header-link-item(href="#Article") Article
                         a.nav-button.trans(href="#") CONTRACT
 
+                    button.hamburger-menu
+                        span.hamburger-line
+                        span.hamburger-line
+                        span.hamburger-line     
+
+                //- Mobile menu
+                .navigation-mobilemenu
+                    .mobilemenu-header 
+                        .mobilemenu-header-wrap
+                            button.mobilemenu-close(aria-label="Close menu")
+                                span 
+                                span 
+                    ul.mobilemenu-list
+                        li
+                            a(href="#Home") Home
+                        li
+                            a(href="#Project")  Project
+                        li
+                            a(href="#Services") Services 
+                        li
+                            a(href="#Resume") Resume
+                        li
+                            a(href="#Testimonial") Testimonial
+                        li
+                            a(href="#About") About
+                        li
+                            a(href="#Article") Article
+                    
+
         main
             //- Darkmode button
             button.darkmode-common
@@ -43,18 +72,20 @@ html(lang="en")
 
 
             //- Keyvisual
-            section.section-top-keyvisual
+            section.section-top-keyvisual#Home
                 .banner-top-keyvisual 
-                    h1.title-top-keyvisual 
-                        span
-                            img.title-icon-keyvisual(src="./img/top/icon/header_icon_hand.png" alt="Hey, I’m Jamel Full-Stack Developer" loading="eager" width="64" height="59") 
-                        | Hey, I’m Jamel Full-Stack Developer.
-                    p.description-top-keyvisual Full Stack Frontend Developer and Content Writing Based on LA. I specialize in Bug Fixing, Responsive Web Design, and Visual Development.
-                    ul.button-top-list
-                        li
-                            a.button-common-contract(href="#") HIRE ME 
-                        li 
-                            a.button-top-keyvisual.trans(href="#") Play Intro
+                    .bg-top-keyvisual
+                    .content-top-keyvisual
+                        h1.title-top-keyvisual  
+                            span
+                                img.title-icon-keyvisual(src="./img/top/icon/header_icon_hand.png" alt="Hey, I’m Jamel Full-Stack Developer" loading="eager" width="64" height="59") 
+                            | Hey, I’m Jamel Full-Stack Developer.
+                        p.description-top-keyvisual Full Stack Frontend Developer and Content Writing Based on LA. I specialize in Bug Fixing, Responsive Web Design, and Visual Development.
+                        ul.button-top-list
+                            li
+                                a.button-common-contract(href="#") HIRE ME 
+                            li 
+                                a.button-top-keyvisual.trans(href="#") Play Intro
                 .clients-top-keyvisual
                     .heading-top-clients 
                         h2.title-clients I work with over 279+ happy clients all over the world.
@@ -77,7 +108,7 @@ html(lang="en")
                                 img(src="./img/top/icon/keyvisual_icon_linkedin.png" alt="linkedin" width="200" height="64" loading="lazy")
 
             //- Case Study
-            section.section-top-casestudy
+            section.section-top-casestudy#Project
                 .casestudy-heading 
                     .block-common-casestudy 
                         h2 Latest Case Study
@@ -96,56 +127,56 @@ html(lang="en")
                                 img(src="./img/top/casestudy_image_01.png" alt="Latest Case Study" width="424" height="536" loading="eager")
                                 figcaption.casestudy-slide-content
                                     ul.casestudy-content-tag 
-                                        li Java
-                                        li HTML 
+                                        li Java •
+                                        li HTML •
                                         li CSS
                                     h3.casestudy-item-title Relik - Admin Dashboard
-                                    a.casestudy-item-action(href="#") View Case Study
+                                    a.casestudy-item-action.trans(href="#") View Case Study
                         li.swiper-slide
                             figure
                                 img(src="./img/top/casestudy_image_02.png" alt="Relik - Admin Dashboard" width="424" height="536" loading="eager")
                                 figcaption.casestudy-slide-content
                                     ul.casestudy-content-tag 
-                                        li Java
-                                        li HTML 
+                                        li Java •
+                                        li HTML •
                                         li CSS
                                     h3.casestudy-item-title Relik - Admin Dashboard
-                                    a.casestudy-item-action(href="#") View Case Study
+                                    a.casestudy-item-action.trans(href="#") View Case Study
 
                         li.swiper-slide
                             figure
                                 img(src="./img/top/casestudy_image_03.png" alt="Latest Case Study" width="424" height="536" loading="eager")
                                 figcaption.casestudy-slide-content
                                     ul.casestudy-content-tag 
-                                        li Java
-                                        li HTML 
+                                        li Java •
+                                        li HTML •
                                         li CSS
                                     h3.casestudy-item-title Relik - Admin Dashboard
-                                    a.casestudy-item-action(href="#") View Case Study
+                                    a.casestudy-item-action.trans(href="#") View Case Study
                         li.swiper-slide
                             figure
                                 img(src="./img/top/casestudy_image_02.png" alt="Relik - Admin Dashboard" width="424" height="536" loading="eager")
                                 figcaption.casestudy-slide-content
                                     ul.casestudy-content-tag 
-                                        li Java
-                                        li HTML 
+                                        li Java •
+                                        li HTML •
                                         li CSS
                                     h3.casestudy-item-title Relik - Admin Dashboard
-                                    a.casestudy-item-action(href="#") View Case Study
+                                    a.casestudy-item-action.trans(href="#") View Case Study
                         li.swiper-slide
                             figure
                                 img(src="./img/top/casestudy_image_03.png" alt="Latest Case Study" width="424" height="536" loading="eager")
                                 figcaption.casestudy-slide-content
                                     ul.casestudy-content-tag 
-                                        li Java
-                                        li HTML 
+                                        li Java •
+                                        li HTML •
                                         li CSS
                                     h3.casestudy-item-title Relik - Admin Dashboard
-                                    a.casestudy-item-action(href="#") View Case Study
+                                    a.casestudy-item-action.trans(href="#") View Case Study
                 div.casestudy-slide-pagination.swiper-pagination
 
             //- Services
-            section.section-top-services
+            section.section-top-services#Services
                 .services-heading 
                     .block-common-seervices 
                         h2 My Services
@@ -166,7 +197,7 @@ html(lang="en")
                             figure.services-image 
                                 img(src="./img/top/section_image_services_02.png" alt="Front-end Development" width="344" height="248" loading="lazy")
                         a(href="#")
-                            h3.title-list-services  Back-end Development 
+                            h3.title-list-services  Front-end Development
                         p Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.
                         a(href="#").button-list-service Let’s Work Together
                     li
@@ -174,13 +205,13 @@ html(lang="en")
                             figure.services-image 
                                 img(src="./img/top/section_image_services_03.png" alt="Content Writing" width="344" height="248" loading="lazy")
                         a(href="#")
-                            h3.title-list-services  Back-end Development 
+                            h3.title-list-services  Content Writing
                         p Vivamus in quam ut felis consectetur imperdiet et sed metus. Nullam tristique scelerisque metus id dignissim.
                         a(href="#").button-list-service Let’s Work Together
 
 
             //- Stats
-            div.section-top-stats
+            div.section-top-stats#Resume
                 ul.list-top-stats 
                     li
                         figure.icon-list-stats
@@ -196,14 +227,14 @@ html(lang="en")
                         figure.icon-list-stats
                             img(src="./img/top/icon/stats_icon_03.png" alt="279+" width="48" height="48" loading="lazy")
                         h2.title-list-stats 279+
-                        p Years of experience
+                        p Happy Clients
                     li
                         figure.icon-list-stats
                             img(src="./img/top/icon/stats_icon_04.png" alt="1652+" width="48" height="48" loading="lazy")
                         h2.title-list-stats 1652+
                         p Hours of Work
             //- Testimonial
-            section.section-top-testimonial
+            section.section-top-testimonial#Testimonial
                 .testimonial-content 
                     .block-common-testimonial 
                         h2 Client Testimonial
@@ -230,17 +261,7 @@ html(lang="en")
                                             h3.testimonial-client-name Cameron Williamson
                                             p Founder of 
                                                 span Relik
-                            li.testimnial-item.swiper-slide 
-                                blockquote.testimonial-feedback “Great Designer, does great work and is very flexible with change. if you’re a programmer and are looking for UI/UX designer is definitely well qualified for the job.”
-                                .testimonial-client
-                                    .client-profile
-                                        figure.client-avatar
-                                            img(src="./img/top/testional_image_user.png" alt="Cameron Williamson" width="72" height="72" loading="lazy")
-                                        .testimonial-client-info
-                                            h3.testimonial-client-name Cameron Williamson
-                                            p Founder of 
-                                                span Relik
-                    .button-common-secondary
+                    .button-common-secondary.button-top-testimonial
                         button.testimnial-button-prev
                             img(src="./img/common/icon/icon_common_left.png" alt="Button Left" width="24" height="24" loading="lazy")
                         button.testimnial-button-next
@@ -249,7 +270,7 @@ html(lang="en")
                     img(src="./img/top/testimonial_video.png" alt="Client Testimonial" width="536" height="648" loading="lazy")
 
             //- Contact
-            section.section-top-contact
+            section.section-top-contact#About
                 .contact-content 
                     .block-common-contact
                         h2 Have a project idea. Let’s work together!
@@ -271,32 +292,33 @@ html(lang="en")
 
         footer.footer-common
             .footer-infomation 
-                a.footer-logo
+                a.footer-logo(href="./")
                     img(src="./img/common/header_logo.png" alt="Jamel Eusebio" width="230" height="48" loading="eager")
                 address.footer-address
-                    span 4517 Ave. Manchester, Kentucky 39495, 
-                    span Los Angeles, California, USA
+                    span 4517 Ave. Manchester, Kentucky
+                    span  39495, Los Angeles, California, USA
             ul.footer-list 
                 li
-                    a(href="#") Home
-                    a(href="#") About
-                    a(href="#") Resume
+                    a(href="#Home") Home
+                    a(href="#About") About
+                    a(href="#Resume") Resume
                     a(href="#") Article
                 li
-                    a(href="#") Services
-                    a(href="#") Projects
+                    a(href="#Services") Services
+                    a(href="#Projects") Projects
                     a(href="#") Pricing Plans
                     a(href="#") Contact
                 li
-                    a(href="#") Facebook
-                    a(href="#") Twitter
-                    a(href="#") Instagram
-                    a(href="#") CodePen
+                    a(href="#" target="_black" rel="noopener") Facebook
+                    a(href="#" target="_black" rel="noopener") Twitter
+                    a(href="#" target="_black" rel="noopener") Instagram
+                    a(href="#" target="_black" rel="noopener") CodePen
 
             small.footer-copyright All content © 2006-Current Jamel Eusebio and respective copyright holders.
 
         script(src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js")
         script(src="./js/scripts.js")
+
 
 
 

@@ -107,3 +107,7 @@ logs
 
 # CSS maps
 *.css.map
+
+
+# Distribution directory
+dist/
