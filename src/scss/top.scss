@@ -11,12 +11,13 @@
 
 // Navigation bar
 .top-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    min-width: varl.$container-width;
     background-color: #fff;
-    z-index: 99;
+    // z-index: 99;
+    text-align: center;
 
 }
 
@@ -195,6 +196,8 @@
 
 
 .mobilemenu-list {
+    text-align: left;
+
     li {
         margin: 0;
         padding: 0;
@@ -290,13 +293,14 @@
     background: linear-gradient(to bottom, #ffffff 0%, #e9f0ec 100%);
     // min-height: 1192px;
     padding-bottom: 100px;
+    min-width: varl.$container-width;
 
 }
 
 .banner-top-keyvisual {
     width: varl.$container-width;
     min-height: 592px;
-    margin: 112px auto 104px;
+    margin: 0px auto 104px;
     position: relative;
 }
 
@@ -596,7 +600,7 @@
     background-color: #E9F0EC;
     min-height: 918px;
     padding: 95px 0 100px;
-
+    min-width: varl.$container-width;
 }
 
 .block-common-seervices {

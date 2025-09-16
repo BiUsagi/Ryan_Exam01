@@ -2,7 +2,6 @@
 @use './base'as base;
 @use '../parts/components'as components;
 
-// Wrap all responsive styles in html to increase specificity
 html {
     .header-logo {
 
@@ -15,6 +14,15 @@ html {
     }
 
 
+    .top-header {
+        @include varl.respond-sp {
+            min-width: 100vw;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 99;
+        }
+    }
 
     .navigation-top {
         @include varl.respond-sp {

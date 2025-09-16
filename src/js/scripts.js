@@ -41,7 +41,7 @@ const swiper = new Swiper(".casestudy-content", {
     //   slidesPerView: 2,
     //   spaceBetween: 20,
     // },
-    1024: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
